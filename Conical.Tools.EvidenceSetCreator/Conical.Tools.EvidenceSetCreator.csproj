@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>BorsukSoftware.Conical.Tools.EvidenceSetCreator</RootNamespace>
+    <Company>Borsuk Software</Company>
+    <Product>Conical Evidence Set creator</Product>
+    <Copyright>Borsuk Software</Copyright>
+    <Description>Command line tool to be able to create evidence sets easily from search criteria</Description>
+    <PackageIcon>conical.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackAsTool>true</PackAsTool>
+	<ToolCommandName>BorsukSoftware.Conical.Tools.EvidenceSetCreator</ToolCommandName>
+	<PackageId>BorsukSoftware.Conical.Tools.EvidenceSetCreator</PackageId>
+	<Authors>BorsukSoftware</Authors>
+	<AssemblyName>BorsukSoftware.Conical.Tools.EvidenceSetCreator</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\common\conical.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BorsukSoftware.Conical.Client" Version="1.0.0.64" />
+  </ItemGroup>
+
+</Project>
